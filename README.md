@@ -2,37 +2,54 @@
 
 **Digital Design & Verification Engineer**
 
-[cite_start]I am a fourth-year Electronics and Communication Engineering student at Cairo University, passionate about building and verifying complex digital systems[cite: 220]. [cite_start]With a solid foundation in hardware/software co-design, SoC design, and DSP, I am focused on bridging the gap between advanced algorithms and efficient hardware implementation[cite: 228, 293].
+I am an Electronics and Communication Engineering graduate from Cairo University, passionate about building and verifying complex digital systems. With a solid foundation in hardware/software co-design, SoC architectures, and advanced DSP, I specialize in bringing high-performance RTL designs to life and ensuring their robustness through rigorous UVM environments.
 
 ## 🎓 About Me
-* [cite_start]📚 **Education:** B.Sc. in Electronics and Communication Engineering, Cairo University (Expected 2026, Excellent 86.6%).
-* [cite_start]🎯 **Focus Areas:** Digital Design, Digital Verification (UVM), ASIC/FPGA Flow, and HW/SW Co-design[cite: 227, 235].
-* [cite_start]💼 **Experience:** * **Digital Design Intern** at Analog Devices (ADI)[cite: 233].
-  * [cite_start]**Digital Verification Intern** at Mixel[cite: 230].
-* [cite_start]📫 **Contact:** khaledryad816@gmail.com[cite: 218].
+* 📚 **Education:** B.Sc. in Electronics and Communication Engineering, Cairo University (Excellent Grade, 86.6%).
+* 🎯 **Focus Areas:** RTL Design, UVM Verification, ASIC/FPGA Flow, and HW/SW Co-design.
+* 💼 **Experience:** * **Digital Design Intern** at Analog Devices (ADI).
+  * **Digital Verification Intern** at Mixel.
+* 📫 **Contact:** khaledryad816@gmail.com
 
 ## 🛠️ Technical Skills
-* [cite_start]**HDLs & Verification:** Verilog, VHDL, SystemVerilog, UVM[cite: 290].
-* [cite_start]**Design & Physical Flow:** RTL Design, FPGA Design Flow, Logic Synthesis, CDC, STA, ASIC flow (RTL-to-GDS)[cite: 291, 293].
-* [cite_start]**Programming & Scripting:** Python, C, C++, Assembly, Bash, TCL, MATLAB[cite: 294, 307].
-* [cite_start]**Advanced Tech:** DSP Modeling, Fixed-Point Analysis, AI/ML Pipelines, Large Language Models (LLMs)[cite: 276, 295, 296].
-* [cite_start]**EDA Tools:** Questa Sim, ModelSim, Xilinx Vivado, Synopsys Design Compiler, Cadence Virtuoso[cite: 300, 301, 302, 306].
+* **HDLs & Verification:** Verilog, VHDL, SystemVerilog, UVM, Assertions (SVA), Functional & Code Coverage.
+* **Digital Design & Physical Flow:** RTL Design, Logic Synthesis, CDC, STA, FPGA Design Flow, ASIC Flow (RTL-to-GDS).
+* **SoC & Bus Architectures:** Computer Architecture, HW/SW Co-design, Bus Protocols (AMBA APB/AHB/AXI).
+* **Signal Processing & Scripting:** MATLAB, DSP System-Level Modeling, Fixed-Point Analysis, Python, C/C++, TCL, Shell Scripting.
+* **EDA Tools:** Questa Sim, ModelSim, Xilinx Vivado, Synopsys Design Compiler, Cadence Virtuoso.
 
-## 🚀 Featured Projects
+## 🚀 Featured Digital Design & Verification Projects
 
-### Hardware-Accelerated Massive MIMO Detection System (Graduation Project)
-* [cite_start]Designed a hardware-accelerated detection system for 5G/6G networks using a Multi-Cluster PULP Platform.
-* [cite_start]Architected a multi-accelerator subsystem by deploying 8 Hardware Processing Engines (HWPEs), utilizing FFT RTL as the computational core[cite: 242].
-* [cite_start]Investigated hardware-software execution flows mapping a main control processor to an 8-core compute cluster via an AXI bus[cite: 243, 244].
+### 1. Hardware-Accelerated Massive MIMO Detection System (Graduation Project)
+* Designed a hardware-accelerated 8x8 MIMO detection system for 5G/6G networks using a Multi-Cluster PULP Platform.
+* Architected a multi-accelerator subsystem by deploying 8 Hardware Processing Engines (HWPEs) using an SDF FFT core.
+* Investigated HW/SW execution flows and traced instructions routed from the controller's main memory to a shared cache via an AXI bus.
+* Traced hardware DMA data paths, identifying transfer bottlenecks to justify scaling to a multi-cluster architecture.
+* Implemented a Matched Filter and linear solver-based matrix inversion architecture integrated with a systolic array matrix multiplier for a full MMSE equalizer.
 
-### RTL-to-GDS Configurable Multi-Clock Digital System
-* [cite_start]Executed the complete ASIC physical flow from scratch to final GDS file[cite: 262, 265].
-* [cite_start]Verified logic using a self-checking SystemVerilog testbench, and synthesized the design using Synopsys Design Compiler (TCL scripts), resolving setup/hold timing violations[cite: 262, 263, 264].
+### 2. RTL-to-GDS Low-Power Multi-Clock Digital System
+* Designed core system blocks from scratch (ALU, FIFO, UART, Synchronizers) and verified logic using a SystemVerilog self-checking testbench.
+* Constrained and synthesized the design using Synopsys Design Compiler (TCL scripts), resolved setup/hold violations, and proved functional equivalence via Formality before executing the complete ASIC physical flow to GDS.
 
-### System-on-Chip (SoC) & Protocol Design
-* [cite_start]Designed a 50-instruction pipelined MIPS processor featuring exception handling, branch prediction, and an APB/AHB bus architecture[cite: 248, 249, 250].
-* [cite_start]Designed end-to-end RTL for a Single-Master AMBA AHB-Lite Protocol to FPGA implementation via Xilinx Vivado[cite: 254, 255].
+### 3. System-on-Chip (SoC) Design & Bus Architectures
+* Implemented a 50-instruction pipelined MIPS processor (along with 10-instruction multi-cycle and 50-instruction single-cycle variants) featuring exception handling and branch prediction units.
+* Integrated an APB/AHB bus architecture with an AHB-to-APB bridge controlling peripherals like a Timer and GPIO.
 
-### AI & DSP Automation
-* [cite_start]Engineered an automated AI-driven pipeline utilizing Large Language Models (LLMs) to accurately classify and validate large-scale datasets[cite: 276].
-* [cite_start]Developed generic MATLAB models and performed fixed-point analysis for DSP architectures like a 4096-point DIF FFT[cite: 240].
+### 4. AMBA AHB-Lite Protocol Implementation
+* Designed an end-to-end Single-Master AMBA AHB-Lite Protocol from RTL design to FPGA implementation flow using Xilinx Vivado.
+
+### 5. Advanced UVM & SystemVerilog Verification Projects
+* **ALSU Verification:** Designed the RTL and developed a comprehensive UVM-based verification environment for an Arithmetic Logic Shift Unit.
+* **PWM Verification:** Implemented the RTL for a Pulse Width Modulation unit, verified it via a UVM environment, and deployed it on an FPGA.
+* **FIFO UVM Verification:** Fully verified a FIFO design using a complete UVM environment with functional and code coverage metrics.
+* **FIFO SystemVerilog Verification:** Implemented constrained randomization, assertions (SVA), and a golden model for FIFO verification.
+
+### 6. Clock Domain Crossing (CDC) & Specialized Arithmetic Units
+* **Configurable Cross-Clock Domain Unit:** Engineered a highly parameterized RTL architecture with an Asynchronous FIFO for safe data transfer across unrelated clock domains.
+* **Configurable Kogge-Stone Adder:** Implemented a fully configurable 16-bit Parallel Prefix Adder utilizing a custom dot-operator tree to minimize arithmetic delay.
+* **Asynchronous FIFO:** Designed and implemented an Asynchronous FIFO utilizing advanced CDC techniques, fully deployed on an FPGA.
+
+### 7. Hardware Accelerators & Peripheral IPs
+* **3×3 Systolic Array:** Executed a full-custom transistor-level design of a systolic array architecture for matrix multiplication.
+* **DSP48A1 Slice Design:** Modeled and designed a DSP48A1 slice matching Spartan-6 FPGA architecture using Verilog.
+* **SPI Slave with RAM:** Implemented an SPI Slave protocol integrated with a single-port RAM on an FPGA.
